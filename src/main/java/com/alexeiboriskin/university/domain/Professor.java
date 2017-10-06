@@ -31,7 +31,7 @@ public class Professor extends Staff {
         return id;
     }
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @Override
     public Address getAddress() {
         return address;

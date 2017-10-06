@@ -46,7 +46,7 @@ public class Student extends Staff {
         return super.getLastName();
     }
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @Override
     public Address getAddress() {
         return address;

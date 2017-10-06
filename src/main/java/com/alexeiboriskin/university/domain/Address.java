@@ -14,7 +14,7 @@ public class Address {
     private String address;
     private int zipCode;
 
-    private enum US {
+    public enum US {
 
         ALABAMA("Alabama", "AL", "US-AL"), ALASKA("Alaska", "AK", "US-AK"), ARIZONA(
                 "Arizona", "AZ", "US-AZ"), ARKANSAS("Arkansas", "AR", "US-AR"), CALIFORNIA(

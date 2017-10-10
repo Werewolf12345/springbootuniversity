@@ -49,7 +49,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
         professorRepository.save(professor3);
 
         Student student1 = new Student("Joe", "Doe", new Address(Address.US.ILLINOIS, "212 Elm st, Mettawa", 60061));
-        Student student2 = new Student("JOE", "doe", new Address(Address.US.ILLINOIS, "212 elm ST, mettawa", 60061));
+        Student student2 = new Student("JOEe", "doe", new Address(Address.US.ILLINOIS, "212 elm ST, mettawa", 60061));
         Student student3 = new Student("Adam", "Smith", new Address(Address.US.ILLINOIS, "214 elm STREET mettawa", 60061));
 
         Group group = new Group("GRP1", professor1);

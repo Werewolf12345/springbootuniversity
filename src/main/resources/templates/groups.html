@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Groups list</title>
+</head>
+<body>
+<h2 style="text-align: center;">
+    <strong>Groups list</strong>
+</h2>
+
+<table style="margin-left: auto; margin-right: auto;" border=1>
+    <thead>
+    <tr>
+        <th>Group Name</th>
+        <th>Counselor Lastname</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="group : ${groups}">
+        <td style="text-align: left;" th:text="${group.name}">GroupName</td>
+        <td style="text-align: left;" th:text="${group.counselor.lastName}">Counselor LastName</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

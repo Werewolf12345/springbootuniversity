@@ -30,6 +30,7 @@ public class GroupController {
     public String getStudentsWithGroupId(@PathVariable("groupId") long id, Model model) {
 
         model.addAttribute("students", studentService.getByGroupId(id));
+        model.addAttribute("groupName", groupService.getGroupName(id));
 
         return "students";
     }

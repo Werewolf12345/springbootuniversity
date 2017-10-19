@@ -7,5 +7,6 @@ import java.util.Set;
 public interface GroupService {
 
     Set<Group> getGroups();
+    String getGroupName(Long id);
 
 }

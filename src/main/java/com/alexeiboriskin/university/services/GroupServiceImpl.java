@@ -2,13 +2,13 @@ package com.alexeiboriskin.university.services;
 
 import com.alexeiboriskin.university.domain.Group;
 import com.alexeiboriskin.university.repositories.GroupRepository;
-import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
-@Log4j2
+@Slf4j
 @Service
 public class GroupServiceImpl implements GroupService {
 

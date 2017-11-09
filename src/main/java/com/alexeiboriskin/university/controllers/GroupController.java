@@ -18,7 +18,7 @@ public class GroupController {
         this.studentService = studentService;
     }
 
-    @RequestMapping("/groups")
+    @RequestMapping({"/groups", "/"})
     public String getGroups(Model model) {
 
         model.addAttribute("groups", groupService.getGroups());

@@ -22,6 +22,10 @@ public class Group extends Board<Student> {
         this.counselor = counselor;
     }
 
+    public Group(String name) {
+        this.name = name;
+    }
+
     @OneToMany(mappedBy = "group")
     public Set<Lecture> getLectures() {
         return lectures;
